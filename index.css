@@ -7,3 +7,11 @@ body {
 #counter {
   font-size: 5rem;
 }
+
+#tracker {
+  font-size: 10rem;
+}
+
+.hidden {
+  display: none;
+}

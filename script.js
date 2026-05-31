@@ -1,4 +1,5 @@
 const counter = document.querySelector("#counter");
+const tracker = document.querySelector("#tracker");
 
 counter.textContent = "0 ms";
 
@@ -20,6 +21,10 @@ function misclickIndicator() {
     },
   );
 }
+
+setInterval(() => {
+  tracker.classList.toggle("hidden");
+}, 200);
 
 window.addEventListener("keydown", (e) => {
   if (e.key === "z") {
