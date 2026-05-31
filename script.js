@@ -1,5 +1,5 @@
 const counter = document.querySelector("#counter");
-const tracker = document.querySelector("#tracker");
+const tracker = new Audio("click.wav");
 
 counter.textContent = "0 ms";
 
@@ -23,8 +23,8 @@ function misclickIndicator() {
 }
 
 setInterval(() => {
-  tracker.classList.toggle("hidden");
-}, 200);
+  tracker.play();
+}, 300);
 
 window.addEventListener("keydown", (e) => {
   if (e.key === "z") {
